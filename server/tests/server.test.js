@@ -265,7 +265,7 @@ describe('POST /users', () => {
   });
 
   it('should not create a user if email in use', (done) => {
-    var email = 'byron@example.com';
+    var email = users[0].email;
     var password = '123mnb!';
 
     request(app)
